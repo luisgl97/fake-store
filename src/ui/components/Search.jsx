@@ -8,7 +8,6 @@ export const Search = () => {
     const navigate = useNavigate()
     const location = useLocation()
 
-    console.log(location.search)
     const { q= ""} = queryString.parse(location.search)
 
     const {searchText, onInputChange} = useForm({
