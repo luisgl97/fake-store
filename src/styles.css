@@ -1,0 +1,12 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .card-img-top{
+    padding: 2rem;
+  }
+
+  .card img{
+    height: 20rem;
+    width: auto;
+  }
