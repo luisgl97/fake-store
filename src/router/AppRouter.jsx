@@ -14,11 +14,11 @@ export const AppRouter = () => {
   console.log("APIIIIIIIIIIIIIII")
   return (
     <>
-      <NavBar/>
+      <NavBar data={data} isLoading={isLoading}/>
       <div className="container">
         <Routes>
           <Route path="products" element={<ProductsPage data={data} isLoading={isLoading}/>}></Route>
-          <Route path="search" element={<SearchPage  data={data} isLoading={isLoading}/>}></Route>
+          <Route path="search" element={<SearchPage data={data} isLoading={isLoading}/>}></Route>
           <Route path="product/:id"></Route>
           <Route path="/" element={<Navigate to="/products" />}></Route>
         </Routes>

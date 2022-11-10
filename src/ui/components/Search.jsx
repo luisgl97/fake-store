@@ -20,8 +20,8 @@ export const Search = () => {
     };
 
     return (
-      <form onSubmit={onSearchSubmit} className="d-flex">
-          <input name="searchText" onChange={onInputChange} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+      <form onSubmit={onSearchSubmit} className="d-flex" autoComplete="off">
+          <input name="searchText" value={searchText} onChange={onInputChange} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
     )

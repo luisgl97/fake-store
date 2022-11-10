@@ -13,16 +13,18 @@ export const SearchPage = ({ data }) => {
     product.title.toLocaleLowerCase().includes(q)
   );
 
+  console.log("SearchPage", data)
+  
   return (
     <div>
       <h1>SearchPage</h1>
       <hr />
       {
-        (q === '') ? 
-        ( <h1>No se encontro el producto</h1>) : 
-        ( <ListProducts data={data} />)
+        (q && data?.length>0) ? 
+        ( <ListProducts data={data} />) : 
+        ( <h1>No se encontró el producto</h1>)
       }
-     
+
     </div>
   );
 };
